@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+@font-face{	/* よもぎフォント */
+	font-family:'yomogi';
+	src:url('./../font/yomogi.ttf') format('truetype');
+	src:url('./../font/yomogi.otf') format('opentype');
+}
+
+@font-face{	/* ぼくたちのゴシック2 */
+	font-family:'boku';
+	src:url('./../font/boku.otf') format('opentype');
+}

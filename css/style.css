@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+/********************ベース********************/
+*{
+	margin:0;
+	padding:0;
+	color:#fff;
+	font-family:yomogi;
+	font-weight:lighter;
+}
+
+::selection{
+	background:#bf62d6;
+}
+
+body{
+	background:#14001b;
+	overflow:hidden;
+}
+
+header,footer,ul,h1{
+	text-align:center;
+}
+
+ul{
+	-x-list-style:none;
+}
+
+div#wrapper{
+	margin:0 auto;
+}
+
+a{
+	text-decoration:none;
+}
+
+@media (max-width:999px){  /* スマホ・タブレット向け */
+	/*******************ヘッダー*******************/
+	header{
+		height:35vh;
+		border-bottom:solid 1px #fff;
+	}
+
+	header h1{
+		width:100%;
+		height:100%;
+		background:url("./../img/all/title.svg") no-repeat center 75%/87.5%;
+		text-indent:-9999px;
+	}
+
+	/******************コンテンツ******************/
+	div.contents{
+		width:85%;
+		height:57.5vh;
+		margin:0 auto;
+	}
+
+	div.contents ul{
+		margin:0 auto;
+		padding-top:20px;
+		display:block;
+	}
+
+	div.contents p,ul{
+		font-size:4.25vw;
+	}    
+
+	li{
+		margin:0 auto;
+		border-bottom:solid 1px #fff;
+	}
+
+	div.contents p{
+		margin:20px auto 0;
+		line-height:1.3em;
+	}
+
+	/*******************フッター*******************/
+	footer{
+		height:7.5vh;
+	}
+
+	footer p{
+		font-family:'M PLUS Rounded 1c',sans-serif;
+	}
+}
+
+@media (min-width:1000px){  /* PC向け */
+	/*******************ヘッダー*******************/
+	header{
+		height:57.5vh;
+		border-bottom:solid 1px #fff;
+	}
+
+	header h1{
+		width:100%;
+		height:100%;
+		background:url("./../img/all/title.svg") no-repeat center 75%/57.5%;
+		text-indent:-9999px;
+	}
+
+	/******************コンテンツ******************/
+	@media (max-width:1440px){  /* 横1440px以下の古めのモニター対応 */
+		div.contents{
+			width:87.5%;
+			height:35vh;
+			margin:0 auto;
+		}
+	}
+
+	@media (min-width:1441px){  /* 横1441px以上の新しめのモニター対応 */
+		div.contents{
+			width:85%;
+			height:35vh;
+			margin:0 auto;
+		}
+	}
+
+	div.contents ul{
+		margin:0 auto;
+		padding-top:20px;
+		display:flex;
+		flex-direction:row;
+	}
+
+	div.contents p,ul{
+		font-size:1.5vw;
+	}    
+
+	li{
+		margin:0 auto;
+		border-bottom:solid 1px #fff;
+	}
+
+	div.contents p{
+		margin:65px auto 0;
+		text-align:center;
+		line-height:1.3em;
+	}
+
+	div.contents .sns{
+		width:30%;
+		min-width:350px;
+		max-width:490px;
+		margin:48px auto 0;
+		display:flex;
+		flex-direction:row;
+	}
+
+	div.contents .sns a.icon{
+		width:5.65vh;
+		max-width:55px;
+		height:5.65vh;
+		max-height:55px;
+		margin:0 auto;
+		transition:.3s;
+		display:block;
+	}
+
+	div.contents .sns a.icon:hover{
+		opacity:.4;
+	}
+
+	div.contents .sns a.icon.twitter{
+		background:url("./../img/home/twitter_logo.png") no-repeat center/contain;
+		text-indent:-9999px;
+	}
+
+	div.contents .sns a.icon.youtube{
+		background:url("./../img/home/youtube_logo.png") no-repeat center/contain;
+		text-indent:-9999px;
+	}
+
+	div.contents .sns a.icon.twitch{
+		background:url("./../img/home/twitch_logo.png") no-repeat center/contain;
+		text-indent:-9999px;
+	}
+
+	div.contents .sns a.icon.github{
+		background:url("./../img/home/github_logo.png") no-repeat center/contain;
+		text-indent:-9999px;
+	}
+
+	/*******************フッター*******************/
+	footer{
+		height:7.5vh;
+	}
+
+	footer p{
+		font-family:'M PLUS Rounded 1c',sans-serif;
+	}
+}

@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/********************ベース********************/
+div.ani_back{
+	width:100%;
+	height:100%;
+	top:-100%;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:10;
+}
+
+div.ani_back div:nth-child(1){
+	width:100vw;
+	height:42.5vh;
+	background:url("./../img/all/ani_back_1.svg") no-repeat;
+	animation:star_1 6s ease 36s forwards infinite;
+	top:-45vh;
+	left:5%;
+}
+
+div.ani_back div:nth-child(2){
+	width:100vw;
+	height:32.5vh;
+	background:url("./../img/all/ani_back_2.svg") no-repeat;
+	animation:star_2 9s ease 33.5s forwards infinite;
+	top:-35vh;
+	left:26.25%;
+}
+
+div.ani_back div:nth-child(3){
+	width:100vw;
+	height:32.5vh;
+	background:url("./../img/all/ani_back_3.svg") no-repeat;
+	animation:star_3 7s ease 35s forwards infinite;
+	top:-35vh;
+	left:45.5%;
+}
+
+div.ani_back div:nth-child(4){
+	width:100vw;
+	height:32.5vh;
+	background:url("./../img/all/ani_back_4.svg") no-repeat;
+	animation:star_4 10s ease 34.25s forwards infinite;
+	top:-35vh;
+	left:66%;
+}
+
+div.ani_back div:nth-child(5){
+	width:100vw;
+	height:42.5vh;
+	background:url("./../img/all/ani_back_1.svg") no-repeat;
+	animation:star_5 7s ease 35.5s forwards infinite;
+	top:-45vh;
+	left:83.75%;
+}
+
+div.ani_back div:nth-child(6){
+	width:100vw;
+	height:25vh;
+	background:url("./../img/all/ani_back_5.svg") no-repeat right;
+	animation:rainbow_star 15s ease 40s forwards infinite;
+	top:-30vh;
+	left:-30vh;
+}
+
+/*******************@keyframe*******************/
+@media (min-width:1000px){  /* パソコン向け */
+	/********************star_1********************/
+	@keyframes star_1{
+		0%{
+			top:-45vh;
+		}
+
+		100%{
+			top:130vh;
+		}
+	}
+
+	/********************star_2********************/
+	@keyframes star_2{
+		0%{
+			top:-35vh;
+		}
+
+		100%{
+			top:120vh;
+		}
+	}
+
+	/********************star_3********************/
+	@keyframes star_3{
+		0%{
+			top:-35vh;
+		}
+
+		100%{
+			top:120vh;
+		}
+	}
+
+	/********************star_4********************/
+	@keyframes star_4{
+		0%{
+			top:-35vh;
+		}
+
+		100%{
+			top:120vh;
+		}
+	}
+
+	/********************star_5********************/
+	@keyframes star_5{
+		0%{
+			top:-45vh;
+		}
+
+		100%{
+			top:130vh;
+		}
+	}
+
+	/********************rainbow_star********************/
+	@keyframes rainbow_star{
+		0%{
+			top:-30vh;
+			left:-30vh;
+		}
+
+		27.5%{
+			top:130vh;
+			left:-110vw;
+		}
+
+		100%{
+			top:130vh;
+			left:-110vw;
+		}
+	}
+}
