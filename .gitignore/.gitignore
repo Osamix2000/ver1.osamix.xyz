@@ -1,0 +1,4 @@
+prepros.config
+prepros-6.config
+./index.html
+./*/index.html
